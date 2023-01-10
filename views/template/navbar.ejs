@@ -1,0 +1,42 @@
+<!--navegacion-->
+<header class="topheader menu-fijo">
+    <nav class="topnav">
+      <a href="/" class="logo">
+        <img height="50" width="50" src="/img/logo.jpg" alt="divether"/>
+        <div class="logotype">
+          <p>Divether6</p>
+        </div>
+      </a>
+      <button class="open-menu" aria-label="Abrir menú">
+        <img height="50" width="50" src="/img/Hamburger_icon.svg.png" alt="abrir menú" />
+      </button>
+      <ul class="menu">
+        <button class="close-menu" aria-label="Cerrar menú">
+          <img height="50" width="50" src="/img/close_icon.png" alt="cerrar menú" />
+        </button>
+        <li><a href="/" id="template_base_url" base_url="<%= base_url %>">Inicio</a></li>
+        <li><a href="/nosotros">Nosotros</a></li>
+        <li><a href="/laboratorios">Laboratorios</a></li>
+        <div class="dropdown">
+            <button class="toggle" type="button" data-toggle="dropdown">Product/Prom
+            <span class="caret"></span></button>
+            <ul class="dropdown-menu">
+              <li><a href="/productos">Productos</a></li>
+              <li><a href="/promociones">Promociones</a></li>
+            </ul>
+        </div>
+        <div class="dropdown">
+          <button class="toggle" type="button" data-toggle="dropdown">Usuario
+          <span class="caret"></span></button>
+          <ul class="dropdown-menu">
+            <li id="user_name"></li>
+            <li><a href="#" id="salir">Cerrar Sesión <i class="fas fa-sign-out-alt"></i></a></li>
+          </ul>
+      </div>
+        <!-- <li><a href="#" id="salir"><i class="fas fa-sign-out-alt"></i></a></li> -->
+      </ul>
+    </nav>
+</header>
+<!-- Termina la barra de navegación -->
+
+<script src="<%= base_url %>js/navbar.js"></script>

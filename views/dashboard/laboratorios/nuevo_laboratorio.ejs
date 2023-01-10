@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("../../template/head", {tittle: "Divether 6", base_url:base_url})  %>  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>  
+</head>
+<body>
+  <div class="contenedor">
+      <%- include("../../template/navbar")  %>
+      <div id="desceleccionar" class="main" style="padding-top: 8rem">
+
+        <h1 class="">Laboratorios</h1>
+
+        <div class="row">
+            <div class="col">
+                <form action="" id="form"> 
+                    <div class="row mb-3">
+                        <div class="col-sm-12">
+                            <label for="laboratorio_nombre" class="form-label">Nombre del laboratorio</label>
+                            <input type="text" class="form-control" id="laboratorio_nombre" name="laboratorio_nombre">
+                        </div>
+                    </div>
+                    <div class="row mb-3">
+                        <div class="col-sm-12">
+                            <label for="laboratorio_imagen" class="form-label">Imagen</label>
+                            <input class="form-control nombre_imagen" type="file" id="archivo" name="archivo" multiple>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <button id="enviar_btn" type="button" class="btn btn-success">Enviar</butto>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+        
+      </div>
+    </div>
+    <div id="base_url" base_url="<%= base_url%>"></div>
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+        crossorigin="anonymous"
+    ></script>
+    <%- `<script src="${base_url}js/index.js"></script>`  %>
+    <%- `<script src="${base_url}js/app.js"></script>`  %>   
+    <%- `<script src="${base_url}js/template.js"></script>`  %>   
+    <%- `<script src="${base_url}js/laboratorios/nuevo_laboratorio.js"></script>` %> 
+    
+</body>
+</html>

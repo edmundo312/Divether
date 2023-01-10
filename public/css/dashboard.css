@@ -1,0 +1,52 @@
+:root{
+    --primario: #1a3c6d;
+    --secundario: rgba(255, 255, 255, 0.644);
+    --blanco: #fff;
+    --negro: #000;
+    --terciario: rgba(17, 140, 211, 0.356);
+    --sombra: rgb(230, 228, 228);
+  }
+
+.tabla-usuarios{
+    border: 1px solid var(--primario);
+    padding: 1rem 1rem;
+    border-radius: 1rem;
+    margin-bottom: 3rem;
+}
+
+.boton-agregar{
+  background-color: var(--primario);
+  margin-top: .5rem;
+  padding: 1rem 6rem;
+  border-radius: 5px;
+  font-weight: 700;
+  text-decoration: none;
+  font-size: 2rem;
+  border:none;
+  text-align: center;
+  transition: background-color .3s ease-out ;
+}
+
+.boton-agregar:hover{
+    cursor: pointer;
+    color: var(--blanco);
+    background-color: #032049
+  }
+
+.boton-agregar a{
+    color: var(--blanco);
+    text-decoration: none;
+}
+
+.tabla{
+    display: flex;
+    flex-direction: column;
+}
+
+@media (min-width: 768px) {
+    .tabla{    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    column-gap: 4rem;
+    }
+}

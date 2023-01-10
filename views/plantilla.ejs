@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include("template/head", {tittle: "Divether 6", base_url:base_url})  %>  
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>  
+</head>
+<body>
+  <div class="contenedor">
+      <%- include("template/navbar")  %>
+      <div id="desceleccionar" class="main">
+        
+      </div>
+      <%- include("template/footer")  %>
+    </div>
+    <script 
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" 
+        crossorigin="anonymous"
+    ></script>
+    <%- `<script src="${base_url}js/index.js"></script>`  %>
+    <%- `<script src="${base_url}js/app.js"></script>`  %>   
+    <%- `<script src="${base_url}js/template.js"></script>`  %>   
+    
+</body>
+</html>
